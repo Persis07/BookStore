@@ -12,7 +12,7 @@ body {
 header,
 footer {
     height: 10vh;
-    background-color: gray;
+    background-color: #70300E;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -23,7 +23,15 @@ nav {
     justify-content: center;
     align-items: center;
     gap: 10rem;
-    background-color: aquamarine;
+    background-color: #D8C690;
+}
+
+
+.PGNJ {
+   height: 90px;
+   
+   
+   
 }
 ul {
     list-style: none;
@@ -34,7 +42,7 @@ ul {
     background-color: red;
 }
 li {
-    background-color: blanchedalmond;
+    background-color: #CBB26A;
 }
 li a {
     text-decoration: none;
@@ -42,6 +50,7 @@ li a {
 form {
     display: flex;
     justify-content: center;
+    width: 600px;
     /*align-items: center;*/
 }
 form input {
@@ -49,18 +58,4 @@ form input {
 }
 main {
     height: 80vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.home {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 5rem;
-}
-.card {
-    border: 1px solid black;
-    padding: 2rem;
-    background-color: blanchedalmond;
 }
