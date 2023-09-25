@@ -1,0 +1,52 @@
+:root {
+    font-size: 62.5%;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-size: 1.6rem;
+}
+header,
+footer {
+    height: 10vh;
+    background-color: gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10rem;
+    background-color: aquamarine;
+}
+ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    background-color: red;
+}
+li {
+    background-color: blanchedalmond;
+}
+li a {
+    text-decoration: none;
+}
+form {
+    display: flex;
+    justify-content: center;
+    /*align-items: center;*/
+}
+form input {
+    font-size: 100%;
+}
+main {
+    /*height: 80vh;*/
+}
