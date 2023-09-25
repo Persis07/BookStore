@@ -3,7 +3,7 @@ import LandingPage from "../display/LandingPage";
 export default function Home() {
     return (
         <>
-            <div>
+            <div className="home">
                 <LandingPage/>
             </div>
         </>
