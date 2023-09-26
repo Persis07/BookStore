@@ -59,3 +59,9 @@ form input {
 main {
     height: 80vh;
 }
+
+/* Julian css */
+
+.hidden {
+    display: none;
+}
