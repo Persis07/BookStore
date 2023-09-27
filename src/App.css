@@ -25,13 +25,8 @@ nav {
     gap: 10rem;
     background-color: #D8C690;
 }
-
-
 .PGNJ {
    height: 90px;
-   
-   
-   
 }
 ul {
     list-style: none;
@@ -58,4 +53,31 @@ form input {
 }
 main {
     min-height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    background-color: #9D4314;
+    padding: 2rem;
+}
+.card {
+    border: 1px solid black;
+    padding: 2rem;
+    background-color: #CBB26A;
+}
+.card a {
+    text-decoration: none;
+}
+.card h3,
+.card h4 {
+    color: rgb(255, 245, 245);
+}
+/* Julian css */
+.hidden {
+    display: none;
 }
