@@ -25,23 +25,37 @@ nav {
     gap: 10rem;
     background-color: #D8C690;
 }
+.store-name{
+    text-align: center;
+    padding: 5px;
+    color: #70300E;
+}
 .PGNJ {
    height: 90px;
-}
+   }
+
+   .input-field {
+    width: 600px;
+    height: 25px;
+    padding: 10px;
+   }
 ul {
     list-style: none;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 5rem;
-    background-color: #9D4314;
+    
 }
 li {
     background-color: #CBB26A;
 }
 li a {
     text-decoration: none;
-}
+    color: #431D08;
+    }
+
+
 form {
     display: flex;
     justify-content: center;

@@ -1,4 +1,4 @@
-import { useContext } from "react";
+/*import { useContext } from "react";
 import { Context } from "../../context/CreateContext";
 import { handleInput } from "../../custom/Handle";
 
@@ -18,4 +18,50 @@ export default function Search() {
             </ul>
         </>
     );
-};
+}; */
+
+import React, { useState } from 'react';
+
+
+function BookSearch() {
+  const [books, setBooks] = useState([]);
+  const [searchQuery, setSearchQuery] = useState('');
+
+  const handleSearch = async () => {
+    try {
+      const response = await fetch(
+        `https://anapioficeandfire.com/api/books?name=${searchQuery}`
+      );
+
+      if (!response.ok) {
+        throw new Error('No network response.');
+      }
+
+      const data = await response.json();
+      setBooks(data);
+    } catch (error) {
+      console.error('Error fetching data:', error);
+    }
+  };
+
+  return (
+    <div>
+      <h1 className='store-name'>PGNJ The Book Store</h1>
+      
+      <input className='input-field'
+        type="text"
+        placeholder="Search for your a book..."
+        value={searchQuery}
+        onChange={(e) => setSearchQuery(e.target.value)}
+      />
+      <button onClick={handleSearch}>Search</button>
+      <ul>
+        {books.map((book) => (
+          <li key={book.url}>{book.name}</li>
+        ))}
+      </ul>
+    </div>
+  );
+}
+
+export default BookSearch;
