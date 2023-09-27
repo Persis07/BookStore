@@ -15,7 +15,7 @@ body {
 }
 header {
   height: 10vh;
-  background-color: #70300e;
+ /* background-color: #70300e;*/
   display: flex;
   justify-content: center;
   align-items: center;
@@ -26,14 +26,14 @@ nav {
   justify-content: center;
   align-items: center;
   gap: 10rem;
-  background-color: #d8c690;
+  background-color: rgba(216, 198, 144, 0.5);
 }
 
 
 .PGNJ {
   height: 90px;
 }
-ul {
+.nav-ul {
   list-style: none;
   display: flex;
   justify-content: center;
@@ -42,11 +42,19 @@ ul {
   background-color: #9d4314;
 }
 
+.material-symbols-outlined{
+    background-color: #CBB26A;
+    padding: 2px;
+}
+
 .image-container{
     border: 3px solid black;
     padding: 3.5rem;
     /*background-color: #CBB26A;*/
-    background-color:rgba(128, 128, 128, 0.463);
+    /*background-color:rgba(128, 128, 128, 0.463);*/
+    background-color: rgba(190, 158, 68, 0.5);
+    /*background-color: rgba(67, 29, 8, 0.5);*/
+    /*background-color: rgba(157, 67, 20, 0.5);*/
     border: 1px solid rgba(255, 255, 255, 0.25);
     border-radius: 15px; 
 }
@@ -55,10 +63,13 @@ ul {
 .store-name{
     text-align: center;
     padding: 5px;
-    color: #70300E;
+    color: #70300e;
+   
+    
 }
 .PGNJ {
-   height: 90px;
+   height: 100px;
+  
    }
 
    .input-field {
@@ -69,12 +80,14 @@ ul {
 ul {
     list-style: none;
     display: flex;
-    justify-content: center;
-    align-items: center;
+   
     gap: 5rem;
 }
-li {
+.nav-li {
   background-color: #cbb26a;
+  padding: 4px;
+  align-items: flex-start;
+  
 }
 li a {
 
@@ -100,13 +113,12 @@ form input {
 }
 main {
 
-
     min-height: 80vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    
-}
+    }
+
 .home {
     display: flex;
     justify-content: center;

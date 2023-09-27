@@ -79,7 +79,7 @@ export default function Footer() {
           className="copyright-link"
           target="_blank"
         >
-          Digital career Institute
+          Digital career Institute 
         </Link>
       </div>
     </div>
