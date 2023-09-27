@@ -1,0 +1,116 @@
+/* Common styles for all devices */
+.about-background {
+  min-width: 320px;
+  background-image: url(../Images/books.jpg);
+  background-size: cover;
+  color: rgb(237, 222, 196);
+  font-size:2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-page {
+  margin: 1rem auto;
+  padding: 3rem;
+  width: 80%;
+  background-color:rgba(128, 128, 128, 0.463);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 15px;
+}
+
+.team-titel {
+  margin-bottom: 1rem;
+}
+
+.text-para {
+  margin: 1rem 0;
+}
+
+.team-list {
+  background: none;
+  list-style: none;
+  padding: 0;
+}
+
+.team-list li {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+ 
+}
+
+.team-list li a {
+  text-decoration: none;
+  
+}
+.team-list li a {color:rgb(86,89,83); }
+
+.team-list li a:visited {color: rgb(237, 222, 196); }
+
+.team-list li a:hover {color: rgb(237, 222, 196); }
+
+.team-list li a:focus {background-color:rgb(233, 196, 196); color: black; }
+
+.team-list li a:active {background-color:rgb(233, 196, 196); color: black;  }
+
+/* Media query for mobile devices */
+@media (max-width: 399px) {
+  .team-list{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 0;
+  }
+  .team-list li {
+    background: none;
+    text-align: left;
+    width: 100%;
+    justify-content: space-around;
+   
+      }
+      
+  .profile-img {
+   display: none;
+   
+  }
+}
+
+/* Media query for small devices (e.g., tablets) */
+@media (min-width: 400px) and (max-width: 767px) {
+  .team-list{
+    height: 150px;
+   
+  }
+  .team-list li {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+   
+  }
+
+  .profile-img  {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    border: 3px solid rgb(255, 255, 255);
+  }
+}
+
+/* Media query for medium to large devices */
+@media (min-width: 768px) {
+  .team-list{
+    height: 250px;
+  }
+  .team-list li {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+  }
+
+  .profile-img  {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 3px solid rgb(255, 255, 255);
+  }
+}
