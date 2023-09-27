@@ -3,7 +3,7 @@ import { Link, useNavigate } from "react-router-dom";
 import { useLocation } from "react-router-dom";
 import "./Name.css";
 import Button from "../Button";
-import githubLogo from "../Images/github-icon.jpg";
+import githubLogo from "../Images/github-icon.png";
 import linkedinLogo from "../Images/linkedin-icon.png";
 import twitterLogo from "../Images/twitter-icon.png";
 import whatsappLogo from "../Images/whatsapp-icon.png";
