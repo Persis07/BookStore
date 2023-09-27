@@ -25,6 +25,17 @@ nav {
     gap: 10rem;
     background-color: #D8C690;
 }
+
+.image-container{
+    border: 3px solid black;
+    padding: 3.5rem;
+    /*background-color: #CBB26A;*/
+    background-color:rgba(128, 128, 128, 0.463);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 15px; 
+}
+
+
 .store-name{
     text-align: center;
     padding: 5px;
