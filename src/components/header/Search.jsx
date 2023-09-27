@@ -23,6 +23,7 @@ export default function Search() {
 import React, { useState } from 'react';
 
 
+
 function BookSearch() {
   const [books, setBooks] = useState([]);
   const [searchQuery, setSearchQuery] = useState('');
@@ -50,7 +51,7 @@ function BookSearch() {
       
       <input className='input-field'
         type="text"
-        placeholder="Search for your a book..."
+        placeholder="Find a book..."
         value={searchQuery}
         onChange={(e) => setSearchQuery(e.target.value)}
       />
