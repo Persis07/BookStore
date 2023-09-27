@@ -1,8 +1,8 @@
 /* Common styles for all devices */
 .about-background {
   min-width: 320px;
-  background-image: url(../Images/books.jpg);
-  background-size: cover;
+  /*background-image: url(../Images/books.jpg);
+  background-size: cover;*/
   color: rgb(237, 222, 196);
   font-size:2rem;
   display: flex;
