@@ -8,7 +8,7 @@ export function useFetch() {
             if(response.ok === true) {
                 const data = await response.json();
                 setBooks(data);
-                console.log(data);
+                console.log(data); 
             } else {
                 let error = new Error("Error: I was unable to find any books.");
                 throw error;

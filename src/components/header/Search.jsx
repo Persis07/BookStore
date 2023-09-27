@@ -24,6 +24,7 @@ import React, { useContext, useState } from 'react';
 import { Context } from '../../context/CreateContext';
 
 
+
 function BookSearch() {
   //const [books2, setBooks2] = useState([]);
   const {books2, setBooks2} = useContext(Context);
@@ -52,7 +53,7 @@ function BookSearch() {
       
       <input className='input-field'
         type="text"
-        placeholder="Search for your a book..."
+        placeholder="Find a book..."
         value={searchQuery}
         onChange={(e) => setSearchQuery(e.target.value)}
       />
