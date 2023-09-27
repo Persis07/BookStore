@@ -13,7 +13,12 @@ export default function Footer() {
     const localSubscribedEmails =
       JSON.parse(localStorage.getItem("subscribedEmails")) || [];
     setSubscribedEmails(localSubscribedEmails);
-  }, []);
+     // Check if the user has already subscribed based on local storage
+     if (localSubscribedEmails.includes(email)) {
+      setSubscribed(true);
+
+    }
+  }, [email]);
 
   const handleSubscribe = (e) => {
     e.preventDefault();

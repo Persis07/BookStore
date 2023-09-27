@@ -60,6 +60,7 @@ export default function About() {
   return (
     <div className="about-background">
       <div className="about-page">
+        <div className="about-card">
         <h2 className="team-titel">Who We Are</h2>
         <p className="text-para">
           We are a team of four enthusiastic DCI (Digital Career Institute)
@@ -68,7 +69,8 @@ export default function About() {
           Thrones universe and our skills in React to construct an engaging
           online bookstore.
         </p>
-
+        </div>
+        <div className="about-team-card">
         <h3 className="our-team">Meet Our Team:</h3>
 
         <ul className="team-list">
@@ -83,7 +85,8 @@ export default function About() {
             );
           })}
         </ul>
-
+        </div>
+        <div className="about-card">
         <h2>Our Mission</h2>
 
         <p className="text-para">
@@ -91,54 +94,55 @@ export default function About() {
           providing an exceptional collection of Game of Thrones books and
           related literary works.
         </p>
-
+        </div>
+        <div className="about-card">
         <h2>Our Story</h2>
         <p className="text-para">
           Our journey began with a shared passion for the works of George R.R.
           Martin. Four book enthusiasts joined forces, envisioning a platform
           that celebrates the intricate tales woven in the Game of Thrones
           universe.
-        </p>
-
+        </p> </div>
+        <div className="about-card">
         <h2>Our Evolution</h2>
         <p className="text-para">
           From humble beginnings, we've evolved into a dedicated team, using
           React to create a seamless and engaging online bookstore for fellow
           enthusiasts. Our journey has been marked by learning, growth, and the
           excitement of bringing the world of Westeros to life online.
-        </p>
-
+        </p> </div>
+        <div className="about-card">
         <h2>Our "Aha!" Moment</h2>
         <p className="text-para">
           The pivotal moment for us was when we realized the immense potential
           of combining our technical skills with our love for storytelling. This
           realization fueled our determination to create a unique platform where
           fans can explore the vast realm of Game of Thrones through literature.
-        </p>
-
+        </p> </div>
+        <div className="about-card">
         <h2>Our Audience</h2>
         <p className="text-para">
           We cater to avid readers, fantasy enthusiasts, and anyone seeking an
           unforgettable adventure through the pages of epic fantasy novels. Our
           platform is a haven for those eager to delve into the intrigues of
           Westeros and its characters.
-        </p>
-
+        </p> </div>
+        <div className="about-card">
         <h2>What We Offer</h2>
         <p className="text-para">
           We offer an extensive selection of Game of Thrones books, novellas,
           and related literary works. Our curated collection ensures that fans
           have access to the entire epic, experiencing the world of Westeros in
           all its glory.
-        </p>
-
+        </p> </div>
+        <div className="about-card">
         <h2>Our Values</h2>
         <p className="text-para">
           At our core, we value authenticity, integrity, and a deep respect for
           the art of storytelling. We are committed to delivering exceptional
           experiences to our community, fostering a love for literature, and
           preserving the magic of George R.R. Martin's creation.
-        </p>
+        </p> </div>
       </div>
     </div>
   );

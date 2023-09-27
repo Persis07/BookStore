@@ -16,7 +16,14 @@
   border: 1px solid rgba(255, 255, 255, 0.25);
   border-radius: 15px;
 }
-
+.about-card,
+.about-team-card {
+  margin: 1rem;
+  padding: 3rem;
+  border-radius: 15px;
+  background-color: rgba(172, 150, 117, 0.369);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+}
 .team-titel {
   margin-bottom: 1rem;
 }

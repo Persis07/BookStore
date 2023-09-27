@@ -30,15 +30,19 @@
 }
 .form-input {
   font-size: 2rem;
+  color: rgb(237, 222, 196);
   background-color: #693a2125;
   border: 1px solid rgba(255, 255, 255, 0.25);
   border-radius: 5px;
   margin-right: 1rem;
   padding: 0.5rem;
 }
+.form-input:focus {
+  outline: none;
+}
 .form-input::placeholder {
   color: rgb(237, 222, 196);
-  border: none;
+  
 }
 
 .copyright-text{
