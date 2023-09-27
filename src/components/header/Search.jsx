@@ -50,14 +50,18 @@ function BookSearch() {
   return (
     <div>
       <h1 className='store-name'>PGNJ The Book Store</h1>
-      
-      <input className='input-field'
+      <div className='search'>
+        <input className='input-field'
         type="text"
         placeholder="Find a book..."
         value={searchQuery}
         onChange={(e) => setSearchQuery(e.target.value)}
-      />
-      <button onClick={handleSearch}>Search</button>
+        />
+        <button onClick={handleSearch}>
+          <span class="material-symbols-outlined">search</span>
+        </button>
+      </div>
+      
       {/* <ul>
         {books2.map((book) => (
           <li key={book.url}>{book.name}</li>

@@ -72,8 +72,6 @@ ul {
     justify-content: center;
     align-items: center;
     gap: 5rem;
-    
-
 }
 li {
   background-color: #cbb26a;
@@ -84,9 +82,13 @@ li a {
 
     color: #431D08;
     }
-
-
-
+.search {
+  display: flex;
+  align-items: center;
+}
+.input-field {
+  height: 3rem;
+}
 form {
   display: flex;
   justify-content: center;

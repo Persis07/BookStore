@@ -1,6 +1,7 @@
 import Logo from "./Logo";
 import Links from "./Links";
 import Search from "./Search";
+import ShoppingCart from "./ShoppingCart";
 
 
 export default function NavBar() {
@@ -10,7 +11,7 @@ export default function NavBar() {
                 <Logo/>
                 <Search/> 
                 <Links/>
-                
+                <ShoppingCart/>
             </nav>
         </>
     );
