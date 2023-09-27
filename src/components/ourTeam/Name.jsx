@@ -2,6 +2,7 @@ import React from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { useLocation } from "react-router-dom";
 import "./Name.css";
+import Button from "../Button";
 import githubLogo from "../Images/github-icon.jpg";
 import linkedinLogo from "../Images/linkedin-icon.png";
 import twitterLogo from "../Images/twitter-icon.png";
@@ -40,7 +41,7 @@ function Name() {
               <p>{like}</p>
               <ul>
                 <li>
-                  <Link to={github}  target="_blank">
+                  <Link to={github} target="_blank">
                     <img className="logo" src={githubLogo} alt="" />
                   </Link>
                 </li>
@@ -68,9 +69,11 @@ function Name() {
                 src={image}
                 alt={`${name}'s Profile`}
               />
-              <button className="backBTN" onClick={() => navigate(-1)}>
-                &#x21e6;
-              </button>
+              <Button
+                buttonText="&#x21e6;"
+                className="backBTN"
+                onClick={() => navigate(-1)}
+              ></Button>
             </div>
           </div>
         </div>
