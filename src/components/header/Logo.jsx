@@ -1,16 +1,16 @@
+import { useContext } from "react";
 import {NavLink} from "react-router-dom";
-import PGNJ from "../Images/PGNJ.png";
+import PGNJ from "../../assets/PGNJ.png";
+import { Context } from "../../context/CreateContext";
 
 
 export default function Logo() {
+    const {setBooks2} = useContext(Context);
     return (
         <>
-
-<NavLink to="/"><img src={PGNJ} alt="" className="PGNJ" /></NavLink>
             <ul>
-                <li></li>
+                <li onClick={() => setBooks2("")}><NavLink to="/"><img src={PGNJ} alt="" className="PGNJ" /></NavLink></li>
             </ul>
-            
         </>
     );
 };

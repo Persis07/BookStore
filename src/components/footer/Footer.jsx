@@ -4,6 +4,7 @@ import Button from "../Button";
 import "./Footer.css";
 
 export default function Footer() {
+
   const [email, setEmail] = useState("");
   const [subscribed, setSubscribed] = useState(false);
   const [subscribedEmails, setSubscribedEmails] = useState([]);
@@ -79,3 +80,11 @@ export default function Footer() {
     </div>
   );
 }
+
+    return (
+        <>
+            <footer><h3 style={{color: "white"}}>Footer</h3></footer>
+        </>
+    );
+};
+
