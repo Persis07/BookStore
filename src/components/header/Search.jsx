@@ -20,11 +20,13 @@ export default function Search() {
     );
 }; */
 
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
+import { Context } from '../../context/CreateContext';
 
 
 function BookSearch() {
-  const [books, setBooks] = useState([]);
+  //const [books2, setBooks2] = useState([]);
+  const {books2, setBooks2} = useContext(Context);
   const [searchQuery, setSearchQuery] = useState('');
 
   const handleSearch = async () => {
@@ -38,7 +40,7 @@ function BookSearch() {
       }
 
       const data = await response.json();
-      setBooks(data);
+      setBooks2(data);
     } catch (error) {
       console.error('Error fetching data:', error);
     }
@@ -55,11 +57,11 @@ function BookSearch() {
         onChange={(e) => setSearchQuery(e.target.value)}
       />
       <button onClick={handleSearch}>Search</button>
-      <ul>
-        {books.map((book) => (
+      {/* <ul>
+        {books2.map((book) => (
           <li key={book.url}>{book.name}</li>
         ))}
-      </ul>
+      </ul> */}
     </div>
   );
 }

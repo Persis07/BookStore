@@ -70,19 +70,26 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
+    background-image: url(./components/Images/books.jpg);
+    background-size: cover;
 }
 .home {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 5rem;
-    background-color: #9D4314;
+    /*background-color: #9D4314;*/
     padding: 2rem;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 15px;
 }
 .card {
     border: 1px solid black;
     padding: 2rem;
-    background-color: #CBB26A;
+    /*background-color: #CBB26A;*/
+    background-color:rgba(128, 128, 128, 0.463);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 15px;
 }
 .card a {
     text-decoration: none;

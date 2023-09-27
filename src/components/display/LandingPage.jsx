@@ -14,7 +14,6 @@ import { NavLink } from "react-router-dom";
 export default function LandingPage() {
     const {books} = useContext(Context);
     const {num1, num2, num3} = useRandom();
-    
     return (
         <>
             <div className="card">
