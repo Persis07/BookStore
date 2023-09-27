@@ -91,7 +91,26 @@ main {
 .card h4 {
     color: rgb(255, 245, 245);
 }
+
+
+/*Contact*/
+.contactForm {
+    display: flex;
+    flex-direction: column;
+    background-color: #CBB26A;
+    border: 1px solid black;
+    padding: 2rem;
+    border-radius: 2rem;
+}
+.contactForm label,
+.contactForm button {
+    margin-top: 2rem;
+}
+.contactForm button {
+    max-width: 8rem;
+}
 /* Julian css */
 .hidden {
     display: none;
+
 }
