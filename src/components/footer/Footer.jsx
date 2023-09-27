@@ -79,12 +79,6 @@ export default function Footer() {
       </div>
     </div>
   );
-}
-
-    return (
-        <>
-            <footer><h3 style={{color: "white"}}>Footer</h3></footer>
-        </>
-    );
 };
 
+    
