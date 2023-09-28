@@ -8,9 +8,9 @@ export default function Logo() {
     const {setBooks2} = useContext(Context);
     return (
         <>
-            <ul>
+            <ol>
                 <li onClick={() => setBooks2("")}><NavLink to="/"><img src={PGNJ} alt="" className="PGNJ" /></NavLink></li>
-            </ul>
+            </ol>
         </>
     );
 };
