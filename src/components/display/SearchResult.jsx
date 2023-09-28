@@ -13,7 +13,7 @@ import DanceWithDragonsImage from "../../assets/DanceWithDragons.png";
 export default function SearchResult() {
     const { books2, addItemToCart  } = useContext(Context);
     const [showInfo, setShowInfo] = useState(false);
-
+    const [btnClicked, setBTNClicked] = useState(false);
     const bookImages = {
       "A Game of Thrones": GameOfThronesImage,
       "A Clash of Kings": ClashOfKingsImage,
@@ -36,6 +36,7 @@ export default function SearchResult() {
         "The Princess and the Queen": "No info available.",
         "The Rogue Prince": "No info available.",
     };
+    
     return (
         <>
             <ul>
@@ -55,11 +56,15 @@ export default function SearchResult() {
                             className="backBTN"
                             onClick={() => setShowInfo(prev => !prev)}
                             ></Button>
-                            <Button
+                            <div>
+                            {btnClicked?(<div className="shoppingcart-message">Book is added to your shoppingcart </div>):(<Button
                             buttonText="Add to cart"
                             className="backBTN"
-                            onClick={() => addItemToCart(book.name)}
-                            ></Button>
+                            onClick={() => {addItemToCart(book.name);
+                            setBTNClicked(true)}}
+                            ></Button>)}
+                            </div>
+
                             {showInfo && <p className="bookInfo">{bookInfo[book.name]}</p>}
                         </div>
                     </li>
