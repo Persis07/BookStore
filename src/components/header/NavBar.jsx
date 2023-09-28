@@ -7,6 +7,7 @@ import Search from "./Search";
 export default function NavBar() {
     return (
         <>
+        
             <nav>
                 <Logo/>
                 <Search/> 

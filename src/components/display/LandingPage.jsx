@@ -16,6 +16,7 @@ export default function LandingPage() {
     const {num1, num2, num3} = useRandom();
     return (
         <>
+        
             <div className="card">
                 <NavLink>
                     <img src={num1 === 0 ? GameOfThrones : num1 === 1 ? ClashOfKings : StormOfSwords} alt=""/>
