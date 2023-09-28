@@ -76,10 +76,10 @@ function ShoppingCart() {
             ))}
           </ul>
           <p style={{fontSize: "20px", backgroundColor: "#CBB26A",
-          padding: "5px"}}>Total Price: ${totalPrice.toFixed(2)}</p>
+          padding: "5px", textAlign: "right", paddingRight: "85px"}}>Total Price: ${totalPrice.toFixed(2)}</p>
           <Button 
           buttonText="Buy Books"
-          className="backBTN"
+          className="buyBTN"
           onClick={() => handleBuy(cartItems, totalPrice)}>
           </Button>
         </div>
