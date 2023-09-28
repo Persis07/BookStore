@@ -207,6 +207,17 @@ main {
 .contactForm button {
   max-width: 8rem;
 }
+.bookInfo {
+  color: rgb(237, 222, 196);
+  padding-top: 1rem;
+}
+
+
+
+
+
+
+
 /* Julian css */
 .hidden {
   display: none;
