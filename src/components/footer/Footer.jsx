@@ -7,6 +7,7 @@ export default function Footer() {
 
   const [email, setEmail] = useState("");
   const [subscribed, setSubscribed] = useState(false);
+  
   const [subscribedEmails, setSubscribedEmails] = useState([]);
 
   useEffect(() => {
