@@ -22,7 +22,7 @@ export default function Search() {
 
 import React, { useContext, useState } from 'react';
 import { Context } from '../../context/CreateContext';
-
+import  Button from '../Button';
 
 
 function BookSearch() {
@@ -57,9 +57,12 @@ function BookSearch() {
         value={searchQuery}
         onChange={(e) => setSearchQuery(e.target.value)}
         />
-        <button onClick={handleSearch}>
-          <span class="material-symbols-outlined">search</span>
-        </button>
+          <Button
+  buttonText={<span className="material-symbols-outlined">search</span>}
+  className="searchBTN"
+  onClick={handleSearch}
+></Button>
+        
       </div>
       
       {/* <ul>

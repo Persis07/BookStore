@@ -1,0 +1,9 @@
+.shoppingCart-container  {
+    height: 75vh;
+    margin: 1rem auto;
+    padding: 3rem;
+    width: 80%;
+    background-color: rgba(128, 128, 128, 0.463);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 15px;
+  }

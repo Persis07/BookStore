@@ -7,12 +7,13 @@ export default function Routing() {
   return (
     <>
       <Routes>
-        {" "}
+    
         {/*Routes works like a switch.*/}
         <Route path="/" element={<Main />} />
         <Route path="/about" element={<Main />} />
         <Route path="/about/:name" element={<Name />} />
         <Route path="/contact" element={<Main />} />
+        <Route path="/shopping" element={<Main/>} /> 
         <Route path="*" element={<NotFound />} />
       </Routes>
     </>

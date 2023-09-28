@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useState } from "react";
 import { Context } from "../../context/CreateContext";
 import GameOfThronesImage from "../../assets/GameOfThrones.png";
 import ClashOfKingsImage from "../../assets/ClashOfKings.png";
@@ -10,44 +10,50 @@ import MysteryKnightImage from "../../assets/MysteryKnight.png";
 import DanceWithDragonsImage from "../../assets/DanceWithDragons.png";
 
 export default function SearchResult() {
-    const { books2 } = useContext(Context);
+    const { books2, addItemToCart  } = useContext(Context);
 
-   
+
     const bookImages = {
       "A Game of Thrones": GameOfThronesImage,
       "A Clash of Kings": ClashOfKingsImage,
-        "A Storm Of Swords": StormOfSwordsImage,
-        "The Hedge Knight": HedgeKnightImage,
-        "A Feast For Crows": FeastForCrowsImage,
-        "The Sworn Sword": SwornSwordImage,
-        "The Mystery Knight": MysteryKnightImage,
-        "A Dance with Dragons": DanceWithDragonsImage,
+      "A Storm Of Swords": StormOfSwordsImage,
+      "The Hedge Knight": HedgeKnightImage,
+      "A Feast For Crows": FeastForCrowsImage,
+      "The Sworn Sword": SwornSwordImage,
+      "The Mystery Knight": MysteryKnightImage,
+      "A Dance with Dragons": DanceWithDragonsImage,
     };
 
-    console.log(books2)
+   /*  const handleAddItem = (book) => {
+        setShoppingCart([...shoppingCart, book]);
+    }; */
+
+    console.log(books2);
 
     return (
         <>
-            <ul>
-                {books2.map((book) => (
-                    <li key={book.url}>
-                        <div className="image-container">
-                            <img
-                                src={bookImages[book.name]}
-                                alt={`${book.name} Cover`}
-                                className="book-image"
-                            />
-                            <p>{book.name}</p>
+             <ul>
+        {books2.map((book) => (
+          <li key={book.url}>
+            <div className="image-container">
+              <img
+                src={bookImages[book.name]}
+                alt={`${book.name} Cover`}
+                className="book-image"
+              />
+              <p>{book.name}</p>
 
-
-                            <h4 style={{padding: "5px"}}>$9,99</h4> 
-                            <button style={{
-                              padding: "5px"
-                            }}>Book Info</button>
-                        </div>
-                    </li>
-                ))}
-            </ul>
+              <h4 style={{ padding: "5px" }}>$9.99</h4> 
+              <button
+                style={{ padding: "5px" }}
+                onClick={() => addItemToCart(book.name)}
+              >
+                Add to Cart
+              </button>
+            </div>
+          </li>
+        ))}
+      </ul>
         </>
     );
 }
