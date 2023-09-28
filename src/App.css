@@ -182,12 +182,22 @@ main {
   border-radius: 15px;
 }
 .card {
-  border: 1px solid black;
+  /*border: 1px solid black;
   padding: 2rem;
-  /*background-color: #CBB26A;*/
+  /*background-color: #CBB26A;
   background-color: rgba(128, 128, 128, 0.463);
   border: 1px solid rgba(255, 255, 255, 0.25);
-  border-radius: 15px;
+  border-radius: 15px;*/
+
+  border: 3px solid black;
+    padding: 3.5rem;
+    /*background-color: #CBB26A;*/
+    /*background-color:rgba(128, 128, 128, 0.463);*/
+    background-color: rgba(190, 158, 68, 0.5);
+    /*background-color: rgba(67, 29, 8, 0.5);*/
+    /*background-color: rgba(157, 67, 20, 0.5);*/
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 15px;
 }
 .card a {
   text-decoration: none;
