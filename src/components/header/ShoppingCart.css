@@ -6,4 +6,13 @@
     background-color: rgba(128, 128, 128, 0.463);
     border: 1px solid rgba(255, 255, 255, 0.25);
     border-radius: 15px;
+    position: relative;
+  }
+
+  .buyBTN{
+    margin-right: 0;
+    position: absolute;
+    right: 10rem;
+    margin-top: 0.6%;
+    
   }
