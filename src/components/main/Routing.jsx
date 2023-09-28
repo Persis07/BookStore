@@ -7,7 +7,6 @@ export default function Routing() {
   return (
     <>
       <Routes>
-        {" "}
         {/*Routes works like a switch.*/}
         <Route path="/" element={<Main />} />
         <Route path="/about" element={<Main />} />
