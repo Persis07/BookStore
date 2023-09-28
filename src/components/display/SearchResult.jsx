@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useState } from "react";
 import { Context } from "../../context/CreateContext";
 import Button from "../Button";
 import GameOfThronesImage from "../../assets/GameOfThrones.png";
@@ -11,21 +11,25 @@ import MysteryKnightImage from "../../assets/MysteryKnight.png";
 import DanceWithDragonsImage from "../../assets/DanceWithDragons.png";
 
 export default function SearchResult() {
-    const { books2 } = useContext(Context);
+    const { books2, addItemToCart  } = useContext(Context);
 
-   
+
     const bookImages = {
       "A Game of Thrones": GameOfThronesImage,
       "A Clash of Kings": ClashOfKingsImage,
-        "A Storm Of Swords": StormOfSwordsImage,
-        "The Hedge Knight": HedgeKnightImage,
-        "A Feast For Crows": FeastForCrowsImage,
-        "The Sworn Sword": SwornSwordImage,
-        "The Mystery Knight": MysteryKnightImage,
-        "A Dance with Dragons": DanceWithDragonsImage,
+      "A Storm Of Swords": StormOfSwordsImage,
+      "The Hedge Knight": HedgeKnightImage,
+      "A Feast For Crows": FeastForCrowsImage,
+      "The Sworn Sword": SwornSwordImage,
+      "The Mystery Knight": MysteryKnightImage,
+      "A Dance with Dragons": DanceWithDragonsImage,
     };
 
-    console.log(books2)
+   /*  const handleAddItem = (book) => {
+        setShoppingCart([...shoppingCart, book]);
+    }; */
+
+    console.log(books2);
 
     return (
         <>

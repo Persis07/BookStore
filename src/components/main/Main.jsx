@@ -2,6 +2,7 @@ import {useLocation} from "react-router-dom";
 import Home from "./Home";
 import About from "./About";
 import Contact from "./Contact";
+import ShoppingCart from "../header/ShoppingCart"
 
 export default function Main() {
     const location = useLocation();
@@ -12,6 +13,7 @@ export default function Main() {
                 {location.state?.page === "home" && <Home/>} {/*I must use the ? because location.state.name is null when I load the page for the first time and have not clicked on anyhting*/}
                 {location.state?.page === "about" && <About/>}
                 {location.state?.page === "contact" && <Contact/>}
+                {location.state?.page === "shopping" && <ShoppingCart/>}
             </main>
         </>
     );

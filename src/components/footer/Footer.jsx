@@ -75,11 +75,11 @@ export default function Footer() {
       <div className="copyright-text">
         &copy; {new Date().getFullYear()} Copyright:{" "}
         <Link
-          to="https://digitalcareerinstitute.org/de/"
+          to="https://www.google.de/"
           className="copyright-link"
           target="_blank"
         >
-          Digital career Institute 
+          PGNJ The Book Store
         </Link>
       </div>
     </div>

@@ -12,6 +12,7 @@ export default function Routing() {
         <Route path="/about" element={<Main />} />
         <Route path="/about/:name" element={<Name />} />
         <Route path="/contact" element={<Main />} />
+        <Route path="/shopping" element={<Main/>} /> 
         <Route path="*" element={<NotFound />} />
       </Routes>
     </>
