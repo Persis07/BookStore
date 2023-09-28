@@ -5,7 +5,7 @@ import { Context } from "./CreateContext";
 
 export default function Container({ children }) {
   const { books, setBooks } = useFetch();
-  const [books2, setBooks2] = useState([]);
+  const [books2, setBooks2] = useState("");
   const [cartItems, setCartItems] = useState([]);
 
   const addItemToCart = (item) => {
