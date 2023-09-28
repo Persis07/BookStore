@@ -37,8 +37,6 @@ export default function SearchResult() {
                             />
                             <h4 style={{padding: "5px", color: "#70300E"}}>{book.name}</h4>
                             <h4 style={{color: "#70300E"}}>George R.R. Martin</h4>
-
-
                             <h4 style={{padding: "5px" , color: "#70300E"}}>$9,24</h4> 
                             <Button
                             buttonText="Book Info"
