@@ -24,13 +24,6 @@ export default function SearchResult() {
       "The Mystery Knight": MysteryKnightImage,
       "A Dance with Dragons": DanceWithDragonsImage,
     };
-
-   /*  const handleAddItem = (book) => {
-        setShoppingCart([...shoppingCart, book]);
-    }; */
-
-    console.log(books2);
-
     return (
         <>
             <ul>
@@ -49,8 +42,13 @@ export default function SearchResult() {
                             <h4 style={{padding: "5px" , color: "#70300E"}}>$9,24</h4> 
                             <Button
                             buttonText="Book Info"
-                            //className="backBTN"
-                            onClick={() => navigate(-1)}
+                            className="backBTN"
+                            
+                            ></Button>
+                            <Button
+                            buttonText="Add to cart"
+                            className="backBTN"
+                            onClick={() => addItemToCart(book.name)}
                             ></Button>
                         </div>
                     </li>
