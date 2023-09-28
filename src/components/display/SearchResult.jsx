@@ -1,5 +1,6 @@
 import React, { useContext } from "react";
 import { Context } from "../../context/CreateContext";
+import Button from "../Button";
 import GameOfThronesImage from "../../assets/GameOfThrones.png";
 import ClashOfKingsImage from "../../assets/ClashOfKings.png";
 import StormOfSwordsImage from "../../assets/StormOfSwords.png";
@@ -37,13 +38,16 @@ export default function SearchResult() {
                                 alt={`${book.name} Cover`}
                                 className="book-image"
                             />
-                            <p>{book.name}</p>
+                            <h4 style={{padding: "5px", color: "#70300E"}}>{book.name}</h4>
+                            <h4 style={{color: "#70300E"}}>George R.R. Martin</h4>
 
 
-                            <h4 style={{padding: "5px"}}>$9,99</h4> 
-                            <button style={{
-                              padding: "5px"
-                            }}>Book Info</button>
+                            <h4 style={{padding: "5px" , color: "#70300E"}}>$9,24</h4> 
+                            <Button
+                            buttonText="Book Info"
+                            //className="backBTN"
+                            onClick={() => navigate(-1)}
+                            ></Button>
                         </div>
                     </li>
                 ))}

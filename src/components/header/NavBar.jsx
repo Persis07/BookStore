@@ -7,6 +7,7 @@ import ShoppingCart from "./ShoppingCart";
 export default function NavBar() {
     return (
         <>
+        
             <nav>
                 <Logo/>
                 <Search/> 
